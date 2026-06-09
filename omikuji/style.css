@@ -1,0 +1,55 @@
+body {
+    color: rgb(252, 0, 0);
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.omikuji-container {
+    text-align: center;
+
+    position: relative;
+    display: block
+}
+
+#img {
+    width: 300px;
+}
+
+#resultImage{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 250px
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: none;
+    border: none
+}
+
+.spin {
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1080deg);
+    }
+}
